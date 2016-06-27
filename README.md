@@ -1,6 +1,6 @@
 # solint
 
-[![NPM version](http://img.shields.io/npm/v/solint.svg)](https://www.npmjs.org/package/solint) [![Build Status](https://travis-ci.org/weifund/solint.svg?branch=master)](https://travis-ci.org/weifund/solint) [![Build status](https://ci.appveyor.com/api/projects/status/wwajr0886e00g8je/branch/master?svg=true)](https://ci.appveyor.com/project/weifund/solint/branch/master) [![Coverage Status](https://coveralls.io/repos/github/weifund/solint/badge.svg?branch=master)](https://coveralls.io/github/weifund/solint?branch=master) [![NPM Downloads](https://img.shields.io/npm/dm/solint.svg)](https://www.npmjs.org/package/solint)
+[![NPM version](http://img.shields.io/npm/v/solint.svg)](https://www.npmjs.org/package/solint) [![Build status](https://ci.appveyor.com/api/projects/status/wwajr0886e00g8je/branch/master?svg=true)](https://ci.appveyor.com/project/weifund/solint/branch/master) [![Coverage Status](https://coveralls.io/repos/github/weifund/solint/badge.svg?branch=master)](https://coveralls.io/github/weifund/solint?branch=master) [![NPM Downloads](https://img.shields.io/npm/dm/solint.svg)](https://www.npmjs.org/package/solint)
 
 A mighty, modern Solidity linter that helps you enforce consistent conventions and avoid errors in your Solidity smart-contracts.
 

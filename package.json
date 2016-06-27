@@ -2,13 +2,14 @@
   "name": "solint",
   "version": "0.0.1",
   "description": "A linter for the Solidity programming language",
-  "main": "src/index.js",
   "scripts": {
     "npmcheckversion": "node ./scripts/npmcheckversion.js",
     "preinstall": "npm run npmcheckversion",
     "test": "mocha src/__tests__/**/*.js",
-    "prebuld": "npm run test",
-    "build": "",
+    "prebuild": "npm run test && rimraf dist",
+    "build": "babel src --out-dir dist",
+    "prepublish": "npm run build",
+    "release": "npmpub",
     "pretest": "npm run lint",
     "lint": "npm run lint:js",
     "lint:eslint": "eslint --ignore-path .gitignore",
@@ -16,6 +17,22 @@
     "lint:staged": "lint-staged",
     "coveralls": "cat ./coverage/lcov/lcov.info | coveralls"
   },
+  "authors": [
+    "Nick Dodson <thenickdodson@gmail.com>",
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/weifund/solint.git"
+  },
+  "main": "dist/index.js",
+  "bin": "dist/cli.js",
+  "files": [
+    "CONTRIBUTING.md",
+    "dist",
+    "src",
+    "docs",
+    "!**/__tests__"
+  ],
   "keywords": [
     "solidity",
     "contracts",
@@ -24,7 +41,6 @@
     "linting",
     "linter"
   ],
-  "author": "= <=>",
   "license": "MIT",
   "dependencies": {
     "chalk": "^1.1.3",
