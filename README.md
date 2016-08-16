@@ -4,7 +4,7 @@
 
 A mighty, modern Solidity linter that helps you enforce consistent conventions and avoid errors in your Solidity smart-contracts.
 
-Note, this module is still under heavy development.
+Note, this module is still under heavy development. Until it is ready, please use this utility: https://github.com/duaraghav8/Solium <-- looks great ;-)
 
 ## Install
 
